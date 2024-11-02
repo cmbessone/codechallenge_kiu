@@ -2,10 +2,6 @@
 
 This project is a template for the KIU CodeChallenge, built with FastAPI. It provides a structured setup for quickly creating new endpoints and domains. The `Makefile` is configured to streamline development tasks, making it easy to lint, test, and format code, and prepare the app for deployment.
 
-## Badges
-
-[![Build Status](https://circleci.com/gh/cmbessone/codechallenge_kiu.svg?style=shield)](https://circleci.com/gh/cmbessone/codechallenge_kiu)
-
 ## Table of Contents
 - [Technology](#technology)
 - [Routes](#routes)
@@ -26,7 +22,7 @@ This project is a template for the KIU CodeChallenge, built with FastAPI. It pro
 - **Programming Language**: Python
 - **Framework**: FastAPI
 - **Containerization**: Docker
-- **CI/CD**: CircleCI
+
 
 ## Routes
 

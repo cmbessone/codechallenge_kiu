@@ -1,5 +1,7 @@
 # Variables
 APP_NAME = .
+Docker_Instance = challenge_kiu
+Docker_tag = ${Docker_Instance}
 
 # Commands
 install:
@@ -20,16 +22,16 @@ format:
 
 # Docker Commands
 docker-build:
-	@docker build -t ${APP_NAME} .
+	@docker build -t ${Docker_tag} .
 
 docker-run:
-	@docker run -p 8000:8000 --env-file .env ${APP_NAME}
+	@docker run -p 8000:8000 ${Docker_tag}
 
 docker-stop:
-	@docker stop $$(docker ps -q --filter ancestor=${APP_NAME})
+	@docker stop $$(docker ps -q --filter ancestor=${Docker_tag})
 
 docker-remove:
-	@docker rm $$(docker ps -a -q --filter ancestor=${APP_NAME})
+	@docker rm $$(docker ps -a -q --filter ancestor=${Docker_tag})
 
 # Testing
 test:
