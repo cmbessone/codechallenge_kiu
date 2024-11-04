@@ -8,6 +8,7 @@ This project is a template for the KIU CodeChallenge, built with FastAPI. It pro
 - [Pre-requisites](#pre-requisites)
 - [Usage](#usage)
   - [Run App Locally](#run-app-locally)
+  - [Run with Docker](#run-with-docker)
   - [Run Linter](#run-linter)
   - [Run Tests](#run-tests)
   - [Format Code](#format-code)
@@ -23,7 +24,6 @@ This project is a template for the KIU CodeChallenge, built with FastAPI. It pro
 - **Framework**: FastAPI
 - **Containerization**: Docker
 
-
 ## Routes
 
 - **API Documentation (Swagger)**: [http://localhost:8000/docs](http://localhost:8000/docs)
@@ -38,8 +38,23 @@ This project is a template for the KIU CodeChallenge, built with FastAPI. It pro
 
 ### Run App Locally
 
-To run the application locally with Docker:
+To run the application locally without Docker:
 
-```bash
-docker build -t kiu_codechallenge .
-docker run -p 8000:8000 kiu_codechallenge
+1. Install dependencies:
+   ```bash
+   make install
+
+### Available Make Commands 
+make "command" .  eg: make test
+
+ ```bash
+Available commands:
+  install          Install dependencies
+  run              Run the FastAPI app locally
+  lint             Run lint checks
+  format           Format code using Black and isort
+  docker-build     Build Docker image
+  docker-run       Run Docker container
+  docker-stop      Stop Docker container
+  docker-remove    Remove stopped Docker container
+  test             Run tests
