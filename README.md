@@ -13,9 +13,6 @@ This project is a template for the KIU CodeChallenge, built with FastAPI. It pro
   - [Run Tests](#run-tests)
   - [Format Code](#format-code)
 - [Makefile Commands](#makefile-commands)
-- [Decisions Taken](#decisions-taken)
-- [Features](#features)
-- [Things to Improve](#things-to-improve)
 - [Author](#author)
 
 ## Technology
