@@ -1,11 +1,10 @@
-# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
 
 # Virtual environment directories
 venv/
-.env/
+.venv/
 
 # Local database files
 *.sqlite3
@@ -51,3 +50,4 @@ migrations/
 # Test coverage files
 .coverage
 htmlcov/
+
