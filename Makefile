@@ -35,8 +35,7 @@ docker-remove:
 
 # Testing
 test:
-	@pytest
-
+	PYTHONPATH=. pytest -v
 # Help
 help:
 	@echo "Available commands:"
